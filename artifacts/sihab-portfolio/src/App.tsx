@@ -109,7 +109,7 @@ function Header() {
   return (
     <header className="site-header">
       <div className="header-inner">
-        <Link href="/images/logo.png" className="brand-mark" data-testid="link-brand" onClick={() => setOpen(false)}>
+        <Link href="/" className="brand-mark" data-testid="link-brand" onClick={() => setOpen(false)}>
           <span className="brand-symbol">S</span>
           <span className="brand-copy">
             <span className="brand-name">{content.identity.name}</span>
