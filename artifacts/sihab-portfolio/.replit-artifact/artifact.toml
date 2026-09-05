@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Sihab Bin Sarwar Portfolio"
+description = "A polished personal portfolio for a computer science student focused on data science, machine learning, software development, research, and technical writing."
+version = "1.0.0"
+id = "artifacts/sihab-portfolio"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 20750
+
+[services.development]
+run = "pnpm --filter @workspace/sihab-portfolio run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/sihab-portfolio", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/sihab-portfolio/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "20750"
+BASE_PATH = "/"

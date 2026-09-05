@@ -1,0 +1,45 @@
+export const blog = [
+  {
+    slug: 'the-shape-of-a-good-baseline',
+    title: 'The shape of a good baseline',
+    date: '18 Jun 2024',
+    read: '6 min read',
+    category: 'Methods',
+    summary: 'A baseline is not the model you rush past. It is the measuring stick that keeps the rest of the work honest.',
+    featured: true,
+    coverImage: '',
+    body: [
+      'The first useful model in a project is often the least impressive one. A baseline makes the cost of complexity visible, and that makes it much harder to confuse novelty with progress.',
+      'I now write down the baseline before opening a notebook. What would a simple rule, a linear model, or a frequency table get right? Which mistakes would it make? The questions are more valuable than the initial score.',
+      'A good baseline has a shape: small enough to understand, strong enough to be worth beating, and stable enough to remain a reference when the dataset changes.',
+    ],
+  },
+  {
+    slug: 'notes-from-a-small-dataset',
+    title: 'Notes from a small dataset',
+    date: '02 May 2024',
+    read: '4 min read',
+    category: 'Field notes',
+    summary: 'Small datasets reward restraint. A notebook on splits, leakage, and the confidence to stop.',
+    coverImage: '',
+    body: [
+      'Small data changes the emotional texture of modeling. Every row feels consequential, and every split invites a story that may not generalize.',
+      'The discipline is to make the uncertainty part of the result. Keep the split visible, annotate the outliers, and ask what you would need to observe next before making a stronger claim.',
+      'The best outcome is sometimes a more precise question rather than a more precise prediction.',
+    ],
+  },
+  {
+    slug: 'shipping-the-last-ten-percent',
+    title: 'Shipping the last ten percent',
+    date: '11 Mar 2024',
+    read: '5 min read',
+    category: 'Engineering',
+    summary: 'The final polish is mostly a sequence of decisions about what happens when things are missing.',
+    coverImage: '',
+    body: [
+      'A prototype demonstrates possibility. A product demonstrates what happens on a Tuesday when the network is slow, the input is strange, and the user has already seen the same error twice.',
+      'I think of the final ten percent as the work of making assumptions explicit: loading, empty, stale, invalid, and partial are all states worth designing.',
+      'That work is quiet, but it is also where trust is earned.',
+    ],
+  },
+];
